@@ -1,3 +1,12 @@
+#!/bin/bash
+# ================================================================
+# FIX: Reescribir effort_screen.dart con datos actuales
+# Ejecuta desde la raiz de cynthia_app/: bash fix_effort2.sh
+# ================================================================
+
+echo "Reescribiendo pantalla El Esfuerzo por Ti..."
+
+cat > lib/features/effort/effort_screen.dart << 'ENDOFFILE'
 import 'dart:math';
 import 'package:flutter/material.dart';
 import '../../core/theme/app_colors.dart';
@@ -425,3 +434,8 @@ class _StatData {
     required this.color,
   });
 }
+ENDOFFILE
+
+echo "  Reescrito: lib/features/effort/effort_screen.dart"
+echo ""
+echo "Listo. Ejecuta: flutter run"

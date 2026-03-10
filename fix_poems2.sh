@@ -1,3 +1,12 @@
+#!/bin/bash
+# ================================================================
+# FIX: Reescribir poems_screen.dart completo
+# Ejecuta desde la raiz de cynthia_app/: bash fix_poems2.sh
+# ================================================================
+
+echo "Reescribiendo poems_screen.dart..."
+
+cat > lib/features/poems/poems_screen.dart << 'ENDOFFILE'
 import 'package:flutter/material.dart';
 import '../../core/theme/app_colors.dart';
 import '../../shared/widgets/starfield_background.dart';
@@ -470,3 +479,8 @@ class PoemData {
 
   const PoemData({required this.title, required this.lines});
 }
+ENDOFFILE
+
+echo "  Reescrito: lib/features/poems/poems_screen.dart"
+echo ""
+echo "Listo. Ejecuta: flutter run"
