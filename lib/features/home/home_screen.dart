@@ -10,6 +10,7 @@ import '../effort/effort_screen.dart';
 import '../hug/hug_screen.dart';
 import '../hearts_game/hearts_game_screen.dart';
 import '../canvas/canvas_screen.dart';
+import '../pet/pet_screen.dart';
 import '../map/map_screen.dart';
 import '../quotes/quotes_screen.dart';
 
@@ -95,6 +96,13 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       icon: Icons.palette_rounded,
       color: AppColors.softLavender,
       screen: const CanvasScreen(),
+    ),
+    _SectionData(
+      title: 'Nuestra Mascota',
+      subtitle: 'Cuida a tu companero',
+      icon: Icons.pets_rounded,
+      color: AppColors.warmGold,
+      screen: const PetScreen(),
     ),
   ];
 
